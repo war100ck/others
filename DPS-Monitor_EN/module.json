@@ -10,7 +10,7 @@
     },
     "author": "ZC, translation EN: war100ck",
     "description": "Описание: DPS-метр, сохранение статистики на веб сайте.",
-    "servers": ["https://raw.githubusercontent.com/tera-mod/DPS-Monitor/master/"],
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/DPS-Monitor/master/"],
     "supportUrl": "https://github.com/tera-mod/DPS-Monitor/issues",
     "dependencies": {
         "tera-message": "https://raw.githubusercontent.com/tera-mod/tera-message/master/module.json"
