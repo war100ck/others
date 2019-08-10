@@ -1,7 +1,8 @@
 {
     "files": {
-    "config.json": "7550699a28542605ace5eb863603004d37ad836e364d50435fef6af34edc471d",
+  "config.json": "7550699a28542605ace5eb863603004d37ad836e364d50435fef6af34edc471d",
     "customCommands.json": "8fa4aa0c6de87887f296664fa14b698b25a238b285716bc49132ca0aa5347a13",
+    "generated-manifest.json": "17db8746ae3c5242e89092134f6f5510cc47b2051c78b47871a44ca724eee7b1",
     "index.js": "b5e3c925c49bf3a9c28f19dca513c39e8f5461aa00da1f25a70f6c79d4d5aff6",
     "module.json": "348cecde23b0bcde9be32b8c34bae35f8ebaae20c1055c107ce2dfb3af40b2e8",
     "package-lock.json": "58b6e8abb80d8b909bdfc51db0dbffcf1d7a9beca85954559d675ceceb4284b9",
