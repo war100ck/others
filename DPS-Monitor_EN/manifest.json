@@ -1,7 +1,7 @@
 {
     "files": {
     "index.js": "b5e3c925c49bf3a9c28f19dca513c39e8f5461aa00da1f25a70f6c79d4d5aff6",
-    "module.json": "7c45130d285e364dcd154c5a2c6ccf703f227e3c2c7700a3d87968fe1890b0c5",
+    "module.json": "348cecde23b0bcde9be32b8c34bae35f8ebaae20c1055c107ce2dfb3af40b2e8",
     "settings_migrator.js": "9077f6d53d88fa1a61b2b97d59282a34b604a7662e3ff79c962f80f3cb043098",
     "lib/getMonsterInfo.js": "575f92e4461eda21e2a58838c013ce0d2403dcfd32bcf569f93a6326006d9fe4",
     "lib/getSkillInfo.js": "789af2240c2a40dc1debcb2745179be86420b48f964ab8fcef6dd772c8c37a9e",
