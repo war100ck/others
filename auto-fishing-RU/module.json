@@ -1,12 +1,12 @@
 {
     "disableAutoUpdate": false,
-    "author": "SoliaRdi, translation war100ck ",
+    "author": "SoliaRdi, translation RU: war100ck ",
     "options": {
         "niceName": "Auto-Fishing-RU",
         "guiName": "Auto-Fishing"
     },
     "supportUrl": "https://github.com/war100ck/auto-fishing",
-    "servers": ["https://raw.githubusercontent.com/war100ck/auto-fishing/master/token=90be36fc26239f7c923d206efc7592272e31efb3"],
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/auto-fishing-RU/"],
     "name": "auto-fishing",
     "description": "Fish easier!",
     "packets": {
