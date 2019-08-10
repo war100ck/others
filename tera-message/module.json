@@ -6,8 +6,8 @@
         "guiName": "TERA-Message"
     },
     "author": "ZC",
-    "description": "为Proxy输出 彩色文本 提供便利",
-    "servers": ["https://raw.githubusercontent.com/tera-mod/tera-message/master/"],
+    "description": "Facilitates the output of color text for the Proxy",
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tera-message/"],
     "supportUrl": "https://github.com/tera-mod/tera-message/issues",
     "version": "81.03"
 }
