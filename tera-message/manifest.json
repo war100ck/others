@@ -1,0 +1,10 @@
+{
+    "files": {
+        "index.js": "7208145237773eaeee4aa313620c02cbebea02b9d3e32adf86f0a3a2c03476aa",
+        "module.json": "a6e9e5137a9cfa231d16860c1240194550a392c8b09e898458941f43a0103dd7"
+    },
+    "defs": {
+        "S_CHAT": 3,
+        "S_DUNGEON_EVENT_MESSAGE": 2
+    }
+}
