@@ -1,13 +1,13 @@
 {
-    "disableAutoUpdate": false,
-    "name": "TP",
+    "disableAutoUpdate": true,
+    "name": "Teleport",
     "options": {
-        "niceName": "TP",
-        "guiName": "TP"
+        "niceName": "TERA-Teleport",
+        "guiName": "TERA-Teleport"
     },
     "author": "ZC",
     "description": "Телепортация в любое место",
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tp/"],
-    "supportUrl": "https://github.com/war100ck/others/blob/master/tp/",
+    "supportUrl": "",
     "version": "0.1"
 }
