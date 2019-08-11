@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path");qwrqwrqwrqwrq
 const fs = require("fs");
 const Vec3 = require('tera-vec3');
 module.exports = function TP(mod) {
