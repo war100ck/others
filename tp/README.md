@@ -17,7 +17,7 @@
 | Команды | Описание | Дополнительная Информация
 | ------------- | ------------- | ------------- |
 | tp x y z | move manual with x y z. |  |	
-| tp x y z +`|`- `distance` | move with x y z. |  |
+| tp x y z +/- `distance` | move with x y z. |  |
 | tp up`|`down | move up and down | |
 | tp save `name` | save position to bookmarks. |  |
 | tp move `name` | move to save position in bookmarks. |  |
