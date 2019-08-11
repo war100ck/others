@@ -1,0 +1,14 @@
+{
+    "disableAutoUpdate" : false,
+    "name" : "Окно чата",
+    "category" : "client",
+    "description" : "при нажатии на ник персонажа с зажатым shift в чате - просмотр профиля.",
+    "author" : "",
+    "options": {
+		"niceName": "Окно чата",
+		"guiName": "Окно чата"
+	},
+    "servers" : [
+        "https://raw.githubusercontent.com/war100ck/others/master/S1UI-Chat2/"
+    ]
+}
