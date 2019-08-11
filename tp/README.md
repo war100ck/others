@@ -1,8 +1,8 @@
 <p align="center"><img src="https://github.com/war100ck/others/blob/master/terabooxlogo.svg"></p>
 
 ## TP
-| Команды | Описание | Дополнительная Информация
-| ------------- | ------------- | ------------- |
+| Команды | Дополнительная Информация
+| ------------- | ------------- |
 
 | - tp x y z| |  : move manual with x y z |
 | - tp x|y|z +|- [distance]|  : move with x y z |
