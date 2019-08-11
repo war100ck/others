@@ -1,7 +1,7 @@
 {
 	"files": {
     "index.js": "fa2db97ac83998c227be79ea932f8530aa92117849fc1a935d77a3043db76c22",
-    "module.json": "09fe2a3a41c3a8095f16b374dc8a02d26f66eab805e58bf33ad792fe3895d865"
+    "module.json": "0b0c027d05496721f9e826cc25ed4b04932ddb837dd5ebe7c420d5841ad199c2"
 	},
 	"defs": {
 		"C_PLAYER_LOCATION": 5,
