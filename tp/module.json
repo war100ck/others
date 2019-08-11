@@ -1,0 +1,13 @@
+{
+    "disableAutoUpdate": false,
+    "name": "TP",
+    "options": {
+        "niceName": "TP",
+        "guiName": "TP"
+    },
+    "author": "ZC",
+    "description": "Телепортация в любое место",
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tp/"],
+    "supportUrl": "https://github.com/war100ck/others/blob/master/tp/",
+    "version": "0.1"
+}
