@@ -2,16 +2,5 @@
     "files": {
     "index.js": "fa2db97ac83998c227be79ea932f8530aa92117849fc1a935d77a3043db76c22",
     "module.json": "2dc54f6ccc6317058fd32e0dc65ced56b8f2c11d42a85a808d3629c8151fbcb4"
-    },
-    "defs": {
-        "C_PLAYER_LOCATION": 5,
-        "S_LOGIN": 13,
-		"S_PLAYER_STAT_UPDATE": 12,
-		"S_CREATURE_CHANGE_HP": 6,
-		"S_LOAD_TOPO": 3,
-		"S_INSTANT_MOVE": 3,
-		"S_LOGIN": 13,
-		"S_LOGIN": 13,
-		"S_LOGIN": 13
     }
 }
