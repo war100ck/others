@@ -1,0 +1,13 @@
+{
+    "disableAutoUpdate": true,
+    "name": "Teleport",
+    "options": {
+        "niceName": "TERA-Teleport",
+        "guiName": "TERA-Teleport"
+    },
+    "author": "ZC",
+    "description": "Телепортация в любое место",
+    "servers": [""],
+    "supportUrl": "",
+    "version": "0.1"
+}
