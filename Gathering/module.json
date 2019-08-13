@@ -1,0 +1,19 @@
+{
+    "disableAutoUpdate": false,
+    "name": "Помощь по сбору",
+    "options": {
+        "niceName": "Gathering",
+        "guiName": "Gathering",
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "settingsVersion": 1
+    },
+    "author": "ZC",
+    "description": "Помощь по сбору рессурсов",
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Gathering/"],
+    "supportUrl": "https://github.com/tera-mod/Gathering/issues",
+    "dependencies": {
+        "tera-message": "https://raw.githubusercontent.com/tera-mod/tera-message/master/module.json"
+    },
+    "version": "81.03"
+}
