@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/war100ck/others/blob/master/terabooxlogo.svg"></p>
 
-# <p>Подсказки для сбора рессурсов</p>
+<center># Подсказки для сбора рессурсов</center>
 ---
 ## Описание:
 Подсветка рессурсов с выводом сообщений, как всех, так и по отдельности.
