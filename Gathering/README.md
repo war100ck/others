@@ -1,4 +1,5 @@
 <p align="center"><img src="https://github.com/war100ck/others/blob/master/terabooxlogo.svg"></p>
+------
 ## Подсказки для сбора рессурсов
 ------
 # Описание:
