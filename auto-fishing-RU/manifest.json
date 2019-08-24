@@ -3,21 +3,18 @@
         "index.js": "cf4abd861197cdb749a53d512f7af175b2d92776a31cdc71a7376a53da74b50a",
         "module.json": "9af09e9f898400f0a9dd16e9791a77176d3956a4ba2716a10f59919049c4754c",
     },
-    "defs": {
+   "defs": {
         "C_CANCEL_CONTRACT": 1,
         "C_DIALOG": 1,
         "C_END_FISHING_MINIGAME": 1,
         "C_NPC_CONTACT": 2,
         "C_PLAYER_LOCATION": 5,
-        "C_PUT_WARE_ITEM": [2,3],
         "C_REQUEST_CONTRACT": 1,
         "C_RETURN_TO_LOBBY": 1,
         "C_RQ_ADD_ITEM_TO_DECOMPOSITION_CONTRACT": 1,
         "C_RQ_COMMIT_DECOMPOSITION_CONTRACT": 1,
         "C_START_FISHING_MINIGAME": 1,
         "C_START_PRODUCE": 1,
-        "C_STORE_COMMIT": 1,
-        "C_STORE_SELL_ADD_BASKET": [1,2],
         "C_USE_ITEM": 3,
         "C_USE_PREMIUM_SLOT": 1,
         "S_ABNORMALITY_BEGIN": 3,
@@ -38,7 +35,6 @@
         "S_SPAWN_USER": 14,
         "S_START_COOLTIME_ITEM": 1,
         "S_START_FISHING_MINIGAME": 1,
-        "S_STORE_BASKET": "raw",
         "S_SYSTEM_MESSAGE": 1
     }
 }
