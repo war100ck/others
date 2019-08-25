@@ -76,7 +76,7 @@ module.exports = function autoFishing(mod) {
 			'C_STORE_COMMIT': false,
 		}
 	};
-
+	let dismantle_contract_type = (mod.majorPatchVersion >= 85 ? 90 : 89);
 	let statistic = [],
 		startTime = null,
 		endTime = null,
@@ -289,7 +289,7 @@ module.exports = function autoFishing(mod) {
 				}
 			}
 			case "dismantle": {
-				if (event.type == 89) {
+				if (event.type == dismantle_contract_type) {
 					request.contractId = event.id;
 					dismantleFish();
 				}
@@ -316,7 +316,7 @@ module.exports = function autoFishing(mod) {
 				}
 			}
 			case "dismantle": {
-				if (event.type == 89 && request.contractId == event.id) {
+				if (event.type == dismantle_contract_type && request.contractId == event.id) {
 					mod.setTimeout(() => {
 						makeDecision();
 					}, rng(config.time.contract));
@@ -706,7 +706,7 @@ module.exports = function autoFishing(mod) {
 		switch (request.action) {
 			case "dismantle": {
 				mod.setTimeout(() => {
-					requestContract(89);
+					requestContract(dismantle_contract_type);
 				}, rng(config.time.contract));
 				break;
 			}
@@ -763,7 +763,7 @@ module.exports = function autoFishing(mod) {
 	}
 	//endregion
 
-		//region Send
+	//region Send
 	function bankFillets() {
 		let amount = (config.bankAmount > request.filets.amount ? request.filets.amount : config.bankAmount) - 150;
 		if (mod.majorPatchVersion >= 85) {
@@ -870,7 +870,7 @@ module.exports = function autoFishing(mod) {
 			contract: request.contractId
 		});
 		mod.setTimeout(() => { //reduce opcodes
-			cancelContract(89, request.contractId);
+			cancelContract(dismantle_contract_type, request.contractId);
 		}, 10000);
 	}
 
@@ -894,7 +894,7 @@ module.exports = function autoFishing(mod) {
 		});
 	}
 	//endregion
-	
+
 	//region Helper
 	function getItemIdChatLink(chatLink) {
 		let regexId = /#(\d*)@/;
@@ -1069,7 +1069,7 @@ module.exports = function autoFishing(mod) {
 				config.filetmode = 'sellscroll';
 				if (config.filetmode == 'sellscroll' && Object.values(extendedFunctions.seller).some(x => !x)) {
 					config.filetmode = false;
-					mod.command.message('C_STORE_SELL_ADD_BASKET|S_STORE_BASKET|C_STORE_COMMIT not mapped, seller functions will be disabled!');
+					mod.command.message('C_STORE_SELL_ADD_BASKET|S_STORE_BASKET|C_STORE_COMMIT не отображается, функции продавца будут отключены!');
 				}
 				break;
 			case 'selltonpc':
@@ -1089,7 +1089,7 @@ module.exports = function autoFishing(mod) {
 				break;
 			case 'autosalad':
 				config.autosalad = !config.autosalad;
-				mod.command.message('Auto use of fish salad is now ' + (config.autosalad ? 'en' : 'dis') + 'abled.');
+				mod.command.message('Автоматическое использование рыбного салата ' + (config.autosalad ? 'en' : 'dis') + 'abled.');
 				break;
 			case 'gmmode':
 				config.gmmode = arg;
@@ -1097,7 +1097,7 @@ module.exports = function autoFishing(mod) {
 				break;
 			case 'skipbaf':
 				config.skipbaf = !config.skipbaf;
-				mod.command.message('Skip BAF mode has been ' + (config.skipbaf ? 'en' : 'dis') + 'abled.');
+				mod.command.message('Режим пропуска BAF ' + (config.skipbaf ? 'en' : 'dis') + 'abled.');
 				break;
 			case 'save':
 				mod.command.message('Конфигурация была сохранена.');
@@ -1109,7 +1109,7 @@ module.exports = function autoFishing(mod) {
 				break;
 			case 'debug':
 				DEBUG = !DEBUG;
-				mod.command.message('Debug mode has been ' + (DEBUG ? 'en' : 'dis') + 'abled.');
+				mod.command.message('Режим отладки был ' + (DEBUG ? 'en' : 'dis') + 'abled.');
 				break;
 			case 'stats':
 				var gr = statistic.reduce((acc, val) => {
@@ -1121,7 +1121,7 @@ module.exports = function autoFishing(mod) {
 					mod.command.message(`<font color="#08850c">${lv}</font>  <font color="#56B4E9">Уровень</font>:  <font color="#E69F00">${gr[lv].length}</font>`);
 				}
 				var timePerFish = statistic.reduce((prev, next) => prev + next.time, 0) / statistic.length;
-				mod.command.message(`Всего рыб:<font color="#E69F00">  ${statistic.length}</font>`);
+				mod.command.message(`Всего выловлено рыб:<font color="#E69F00">  ${statistic.length}</font>`);
 				mod.command.message(`Время рыбалки:<font color="#56B4E9">  ${(timePerFish/1000).toFixed(2)}</font>s`);
 				break;
 			default:
