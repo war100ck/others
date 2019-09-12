@@ -1,7 +1,7 @@
 {
     "files": {
     "index.js": "b5e3c925c49bf3a9c28f19dca513c39e8f5461aa00da1f25a70f6c79d4d5aff6",
-    "module.json": "348cecde23b0bcde9be32b8c34bae35f8ebaae20c1055c107ce2dfb3af40b2e8",
+    "module.json": "949aed38098a01bf591f213018f1164ec28a8465bb66c3858418de9c63ca55ff",
     "settings_migrator.js": "9077f6d53d88fa1a61b2b97d59282a34b604a7662e3ff79c962f80f3cb043098",
     "lib/getMonsterInfo.js": "575f92e4461eda21e2a58838c013ce0d2403dcfd32bcf569f93a6326006d9fe4",
     "lib/getSkillInfo.js": "789af2240c2a40dc1debcb2745179be86420b48f964ab8fcef6dd772c8c37a9e",
@@ -12,7 +12,7 @@
     "lib/update.js": "945bef74813eaae7626d77921535057a75a642681d7c4596fd8cd243f55b1fb2",
     "web/index.html": "2b93c82294cdc9ad679df3b1c18cc32d1786c1e250d894664c23d9f42c7146bd",
     "web/main.css": "2028f4ae377bed68637ca83a855aede2e5195840a42dc5cf7669861635186be6",
-    "web/main.js": "b58999d9ee2fb5af1fa7f0df16fb0d9d56e226124e632fe6889c9f77ec10f102",
+        "web/main.js": "b9e6ea6a96b007add7d278442ddc672b61251984378eea24567e2ccdcda808b8",
     "web/audio/click.mp3": "6ca3c4a1e29e15c3c6e24f3660f2646aae842e534f8e1a664e86dd12294335eb",
     "web/audio/enraged.mp3": "95aca95d5232caa5362637df20793c3fe40491158ccbe488dba3fbb299b1132a",
     "web/audio/event.mp3": "43a8dc212fb7172f9409738a14c263b4efca4c6a4ac98e76aef11707ab6be88e",

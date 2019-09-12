@@ -75,7 +75,7 @@ window.onload = function() {
 		ResizeDiv()
 	} else {
 		_tera_client_proxy_.resize_to(320, 320)
-		_tera_client_proxy_.set_title('Tera(DPS) Monitor')
+		_tera_client_proxy_.set_title('Tera(DPS) Damage statistics')
 	}
 	Settings()
 	ReadConfig()
