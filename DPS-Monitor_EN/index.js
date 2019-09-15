@@ -1065,7 +1065,7 @@ module.exports = function TDM(mod) {
 		})
 	})
 	
-	mod.hook('S_SPAWN_USER', 14, e => {
+	mod.hook('S_SPAWN_USER', 15, e => {
 		if (!mod.settings.allUsers) return
 		
 		var uclass = (e.templateId - 10101) % 100
