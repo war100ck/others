@@ -11,7 +11,7 @@ module.exports = function CommandsInfo(mod) {
 		
 
 	
-	mod.hook('S_LOGIN', mod.majorPatchVersion >= 85 ? 13 : 12, event => {
+	mod.hook('S_LOGIN', mod.majorPatchVersion >= 86 ? 14 : 13, event => {
 		gameId = event.gameId
 		job = (event.templateId - 10101) % 100
 		logininfo = true
