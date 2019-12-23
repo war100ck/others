@@ -1,0 +1,12 @@
+{
+    "disableAutoUpdate": false,
+    "name": "Fonts-Vergana",
+    "category": "client",
+    "description": "Читабельный шрифт",
+    "author": "",
+    "options": {
+        "niceName": "Fonts-Vergana",
+        "guiName": "Fonts-Vergana"
+    },
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Readable-Font/"]
+}
