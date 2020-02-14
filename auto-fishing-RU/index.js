@@ -120,8 +120,11 @@ module.exports = function autoFishing(mod) {
 		mod.clearAllTimeouts();
 		if (enabled) {
 			mod.command.message('<font color="#E69F00">Автоматическая рыбалка активирована. Начните рыбалку прямо сейчас. Активируйте приманку и забросьте удочку.</font>');
+			if(mod.majorPatchVersion >= 88){
+				mod.command.message('<font color="#E69F00">Автоматическая рыбалка отключена.</font>');
+			}
 		} else {
-			mod.command.message('<font color="#E69F00">Автоматическая рыбалка отключена.</font>');
+			mod.command.message('Auto fishing deactivated.');
 		}
 		if (enabled) {
 			hook('S_FISHING_BITE', 1, sFishingBite);
@@ -137,7 +140,11 @@ module.exports = function autoFishing(mod) {
 			}
 			hook('S_RP_ADD_ITEM_TO_DECOMPOSITION_CONTRACT', 1, sRpAddItem);
 			hook('S_SPAWN_NPC', 11, sSpawnNpc);
-			hook('S_ABNORMALITY_BEGIN', 3, sAbnBegin);
+			hook('S_ABNORMALITY_BEGIN', mod.majorPatchVersion >= 86?4:3, sAbnBegin);
+			if(mod.majorPatchVersion >= 88){
+				hook('C_CAST_FISHING_ROD', 2, cCastFishingRod);
+				hook('C_STOP_FISHING', 2, cStopFishing);
+			}
 		} else {
 			for (var i = 0; i < hooks.length; i++) {
 				mod.unhook(hooks[i]);
@@ -151,6 +158,18 @@ module.exports = function autoFishing(mod) {
 	};
 
 	//region Hooks
+
+	function cCastFishingRod(event){
+		event.counter=1;
+		event.unk1=237;
+		return true;
+	}
+	function cStopFishing(event){
+		event.counter=1;
+		event.unk=1;
+		return true;
+	}
+
 	function sAbnBegin(event) {
 		if (mod.game.me.is(event.target)) {
 			switch (request.action) {
@@ -212,7 +231,10 @@ module.exports = function autoFishing(mod) {
 	function sFishingBite(event) {
 		if (mod.game.me.is(event.gameId)) {
 			mod.setTimeout(() => {
-				mod.send('C_START_FISHING_MINIGAME', 1, {});
+				mod.send('C_START_FISHING_MINIGAME', mod.majorPatchVersion>=88?2:1, {
+					counter:1,
+					unk:15
+				});
 			}, rng(config.time.stMinigame));
 		}
 	}
@@ -222,7 +244,9 @@ module.exports = function autoFishing(mod) {
 			lastLevel = event.level;
 			if (config.skipbaf && (event.level == 11 || (abnormalityDuration(70261) > 0 && event.level == 7))) {
 				mod.setTimeout(() => {
-					mod.send('C_END_FISHING_MINIGAME', 1, {
+					mod.send('C_END_FISHING_MINIGAME', mod.majorPatchVersion>=88?2:1, {
+						counter:1,
+						unk:24,
 						success: false
 					});
 					mod.setTimeout(() => {
@@ -232,7 +256,9 @@ module.exports = function autoFishing(mod) {
 
 			} else {
 				mod.setTimeout(() => {
-					mod.send('C_END_FISHING_MINIGAME', 1, {
+					mod.send('C_END_FISHING_MINIGAME', mod.majorPatchVersion>=88?2:1, {
+						counter:1,
+						unk:24,
 						success: true
 					});
 				}, rng(config.time.minigame));
@@ -493,14 +519,14 @@ module.exports = function autoFishing(mod) {
 
 	//region Abnormality tracking
 	let abnormalities = {};
-	mod.hook('S_ABNORMALITY_BEGIN', 3, event => {
+	mod.hook('S_ABNORMALITY_BEGIN', mod.majorPatchVersion >= 86?4:3, event => {
 		if (mod.game.me.is(event.target))
-			abnormalities[event.id] = Date.now() + event.duration;
+			abnormalities[event.id] = Date.now() + Number.parseInt(event.duration);;
 	});
 
-	mod.hook('S_ABNORMALITY_REFRESH', 1, event => {
+	mod.hook('S_ABNORMALITY_REFRESH', mod.majorPatchVersion >= 86?2:1, event => {
 		if (mod.game.me.is(event.target))
-			abnormalities[event.id] = Date.now() + event.duration;
+			abnormalities[event.id] = Date.now() + Number.parseInt(event.duration);;
 	});
 
 	mod.hook('S_ABNORMALITY_END', 1, event => {
@@ -555,7 +581,6 @@ module.exports = function autoFishing(mod) {
 			config.filetmode != 'selltonpc') {
 			action = "toomanyfilets"
 		}
-
 		//check
 		switch (action) {
 			case "fullinven": {
@@ -776,7 +801,7 @@ module.exports = function autoFishing(mod) {
 				invenPos: request.filets.slot,
 				id: request.filets.id,
 				dbid: request.filets.dbid,
-				amont: amount
+				amount: amount
 			});
 		} else {
 			mod.send('C_PUT_WARE_ITEM', 2, {
@@ -997,7 +1022,7 @@ module.exports = function autoFishing(mod) {
 	//endregion
 
 	//region Command
-	mod.command.add('f', (key, arg, arg2) => {   //Команда запуска скрипта
+	mod.command.add('f', (key, arg, arg2) => {
 		switch (key) {
 			case 'blacklist':
 				switch (arg) {
@@ -1048,7 +1073,7 @@ module.exports = function autoFishing(mod) {
 						config.filetmode = 'bank';
 						if (config.filetmode == 'bank' && Object.values(extendedFunctions.banker).some(x => !x)) {
 							config.filetmode = false;
-							mod.command.message('C_PUT_WARE_ITEM не отображается, функции банкира для автоматической рыбалки теперь будут отключены.');
+							mod.command.message('C_PUT_WARE_ITEM is not mapped, banker functions for auto-fishing will be disabled now.');
 						}
 						break;
 					default:
