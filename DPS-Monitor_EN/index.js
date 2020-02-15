@@ -29,17 +29,6 @@ module.exports = function TDM(mod) {
 	const Message = require('../tera-message')
 	const MSG = new Message(mod)
 	
-	if (mod.proxyAuthor !== 'caali') {
-		const options = require('./module').options
-		if (options) {
-			const settingsVersion = options.settingsVersion
-			if (settingsVersion) {
-				mod.settings = require('./' + (options.settingsMigrator || 'settings_migrator.js'))(mod.settings._version, settingsVersion, mod.settings)
-				mod.settings._version = settingsVersion
-			}
-		}
-	}
-	
 	const fs               = require('fs')
 	const path             = require('path')
 	const request          = require('request')
@@ -388,11 +377,12 @@ module.exports = function TDM(mod) {
 			dpsmsg += "\n"
 			
 			dpsmsg += className(data[i].class)                               // 职业
-			dpsmsg += "|"    + name                                          // 昵称
-			dpsmsg += "|"    + data[i].dps.nFormatter(3) + "/s"              // DPS
-			dpsmsg += "|"    + data[i].totalDamage.nFormatter(3)             // 合计
+			
 			dpsmsg += "| Total DMG" + data[i].percentage  + MSG.BLU("% ")           // 比例
 			dpsmsg += "| Crit" + crit                                          // 暴率(治疗)
+			dpsmsg += "|"    + data[i].dps.nFormatter(3) + "/s"              // DPS
+			dpsmsg += "|"    + data[i].totalDamage.nFormatter(3)             // 合计
+			dpsmsg += "|"    + name                                          // 昵称
 		}
 		
 		return dpsmsg
@@ -492,20 +482,6 @@ module.exports = function TDM(mod) {
 		}
 	}
 	// packet handle
-	mod.hook('S_LOGIN', 13, e => {
-		myName = e.name
-		me = {
-			"gameId": e.gameId.toString(),
-			"serverId": e.serverId,
-			"playerId": e.playerId,
-			"templateId": e.templateId,
-			"name": e.name,
-			// "class": (e.templateId - 1).toString().slice(-2)
-			"class": (e.templateId - 10101) % 100
-		}
-		putMeInParty(me)
-	})
-	
 	function putMeInParty(m) {
 		var newPartyMember = {
 			'gameId': m.gameId,
@@ -521,15 +497,25 @@ module.exports = function TDM(mod) {
 		}
 	}
 	
-	mod.hook('S_SPAWN_ME', 3, e => {
-		me.gameId = e.gameId.toString()
-		
-		if (!mod.settings.popup) return
-		ui.open()
+	mod.game.on('enter_game', () => {
+		myName = mod.game.me.name
+		me = {
+			"gameId": mod.game.me.gameId.toString(),
+			"serverId": mod.game.me.serverId,
+			"playerId": mod.game.me.playerId,
+			"templateId": mod.game.me.templateId,
+			"name": mod.game.me.name,
+			// "class": (e.templateId - 1).toString().slice(-2)
+			"class": (mod.game.me.templateId - 10101) % 100
+		}
+		putMeInParty(me)
 	})
 	
-	mod.hook('S_LOAD_TOPO', 3, e => {
-		currentZone = e.zone
+	mod.game.me.on('change_zone', (zone, quick) => { 
+		currentZone = zone
+		if (mod.game.me.inDungeon && mod.settings.popup) {
+			ui.open()
+		}
 	})
 	
 	mod.hook('S_BOSS_GAGE_INFO', 3, e => {
@@ -1167,7 +1153,7 @@ module.exports = function TDM(mod) {
 		}
 	})
 	// damage handler : Core
-	mod.hook('S_EACH_SKILL_RESULT', 13, {order: 200}, e => {
+	mod.hook('S_EACH_SKILL_RESULT', 14, {order: 200}, e => {
 		if (!mod.settings.enabled) return
 		// log('me.gameId :'+ me.gameId + '->'+ e.source.toString() +' ->'+ e.owner.toString())
 		// log('[DPS] : ' + e.damage + ' target : ' + e.target.toString())
@@ -1465,7 +1451,7 @@ module.exports = function TDM(mod) {
 	
 	this.destructor = () => {
 		writeBackup()
-		mod.command.remove('d')
+		mod.command.remove('dps')
 	}
 	/* 
 	mod.hook('*', 'raw', (code, data, fromServer) => {

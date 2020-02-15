@@ -41,9 +41,9 @@ var enable_color  = '56B4E9',
 	red_color     = 'FF3000',
 	myName_color  = '00FFFF',
 	
-	redDPS = 4E6,
-	yewDPS = 2E6,
-	greDPS = 1E6
+	redDPS = 8E6,
+	yewDPS = 4E6,
+	greDPS = 2E6
 
 var TDMSettings = {
 	"notice": true,
@@ -70,11 +70,11 @@ eventSound.src   = "audio/event.mp3"
 
 window.onload = function() {
 	if (typeof _tera_client_proxy_ === 'undefined') {
-		window.resizeTo(320, 320)
-		document.body.style.zoom="200%"
+		//window.resizeTo(320, 240)
+		//document.body.style.zoom="200%"
 		ResizeDiv()
 	} else {
-		_tera_client_proxy_.resize_to(320, 320)
+		_tera_client_proxy_.resize_to(300, 240)
 		_tera_client_proxy_.set_title('Tera(DPS) Damage statistics')
 	}
 	Settings()
@@ -113,7 +113,7 @@ function ResizeDiv() {
 	var width = window.innerWidth
 	var height = window.innerHeight
 
-	var divhight = 'height:' + (height - 57) + 'px'
+	var divhight = 'height:' + (height - 55) + 'px'
 	document.getElementById('content').setAttribute("style", divhight)
 
 	var wrapperdivhight = 'height:' + height + 'px'
@@ -127,7 +127,7 @@ function ResizeDiv() {
 
 function useBrowser(url) {
 	if (typeof _tera_client_proxy_ !== 'undefined') {
-		_tera_client_proxy_.resize_to(1920, 1080)
+		_tera_client_proxy_.resize_to(1024, 768)
 	}
 	window.location.href = url
 }

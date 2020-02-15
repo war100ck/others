@@ -35,7 +35,7 @@ async function download(url, dest, cb) {
 		})
 		file.on('finish', function () {
 			file.close(cb)
-			// console.log('[TDM] 已更新...' + path.join(__dirname, '..', dest))
+			console.log('[TDM] Обновлено...' + path.join(__dirname, '..', dest))
 			resolve('success')
 			
 			try {
