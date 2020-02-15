@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/war100ck/others/blob/master/terabooxlogo.svg"></p>
 
-## Прокси-модуль Tera для автоматической рыбалки RU версия.
+## Прокси-модуль TEᖇᗩ для автоматической рыбалки ᖇᑌ версия.
 
 ---
 
