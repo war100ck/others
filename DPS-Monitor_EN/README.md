@@ -10,7 +10,7 @@
 <img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/3.png" alt="Your image title" width="400"/></p>
 
 <p align="center"><img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/4.png" alt="Your image title" width="400"/>
-</p>
+<p align="center"><img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/5.png" alt="Your image title" width="400"/></p>
 
 
 
