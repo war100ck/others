@@ -4,11 +4,13 @@
 
 ------
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/1.png?raw=true")
+
+![alt tag](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/1.png "Описание будет тут")​
+
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/2.png?raw=true")
-
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/3.png?raw=true")
-![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/4.png?raw=true")
 
+![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/4.png?raw=true")
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/5.png?raw=true")
 
 
