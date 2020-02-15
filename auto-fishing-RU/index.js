@@ -121,10 +121,10 @@ module.exports = function autoFishing(mod) {
 		if (enabled) {
 			mod.command.message('<font color="#E69F00">Автоматическая рыбалка активирована. Начните рыбалку прямо сейчас. Активируйте приманку и забросьте удочку.</font>');
 			if(mod.majorPatchVersion >= 88){
-				mod.command.message('<font color="#E69F00">Автоматическая рыбалка отключена.</font>');
+				mod.command.message('<font color="#8B0000">Не известно: Безопасный на данный момент модуль или нет.</font>');
 			}
 		} else {
-			mod.command.message('Auto fishing deactivated.');
+			mod.command.message('<font color="#E69F00">Автоматическая рыбалка отключена.</font>');
 		}
 		if (enabled) {
 			hook('S_FISHING_BITE', 1, sFishingBite);
