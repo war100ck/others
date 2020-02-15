@@ -6,28 +6,28 @@
 </head>
 <body>
 	<div class="tab">
-      <button class="tablinks active" onMouseDown="clickSound.play()" onClick="openTab(event,'wrapper')">𝗗𝗮𝘁𝗮</button>
-      <button class="tablinks" onMouseDown="clickSound.play()" onClick="openTab(event,'records')">𝗥𝗲𝗰</button>
-      <button class="tablinks" onMouseDown="clickSound.play()" onClick="openTab(event,'settings')">𝗦𝗲𝘁𝘁𝗶𝗻𝗴</button>
-      <button class="tablinks" onMouseDown="clickSound.play()" onClick="ExtUI()">𝗘𝘅𝘁𝗕𝗿𝗼𝘄𝘀𝗲𝗿</button>
-      <button class="tablinks" onMouseDown="clickSound.play()" onClick="NoPopUp()">𝗛𝗶𝗱𝗲𝗣𝗮𝗻𝗲𝗹</button>
+      <button class="tablinks active" onMouseDown="clickSound.play()" onClick="openTab(event,'wrapper')"><b>Data</b></button>
+      <button class="tablinks" onMouseDown="clickSound.play()" onClick="openTab(event,'records')"><b>Rec</b></button>
+      <button class="tablinks" onMouseDown="clickSound.play()" onClick="openTab(event,'settings')"><b>Setting</b></button>
+      <button class="tablinks" onMouseDown="clickSound.play()" onClick="ExtUI()"><b>ExtBrowser</b></button>
+      <button class="tablinks" onMouseDown="clickSound.play()" onClick="NoPopUp()"><b>HidePanel</b></button>
 	</div>
 
 	<div id="wrapper" class="tabcontent">
 		<div id="content"></div>
 		<div id="skillLog"></div>
 
-		<button class=btn onMouseDown="clickSound.play()" onClick="ToParty()">𝗧𝗼𝗣𝗮𝗿𝘁𝘆</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="ToGuild()">𝗧𝗼𝗚𝘂𝗶𝗹𝗱</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="HideNames()">𝗛𝗶𝗱𝗲 𝗡𝗶𝗰𝗸</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="Whisper()">𝗪𝗵𝗶𝘀𝗽𝗲𝗿</button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="ToParty()"><b>ToParty</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="ToGuild()"><b>ToGuild</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="HideNames()"><b>HideNames</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="Whisper()"><b>Whisper</b></button>
 		<input class=ipt type="text" size="1" id="name" value="">
 		<br>
-		<button class=btn onMouseDown="clickSound.play()" onClick="openTab(event,'manager')">𝗠𝗼𝗱𝘀𝗠𝗮𝗻𝗮𝗴𝗲𝗿</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="openTab(event,'custom')">𝗖𝗼𝗺𝗺𝗮𝗻𝗱</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="LeaveParty()">𝗘𝘅𝗶𝘁 𝗣𝗮𝗿𝘁𝘆</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="Reset()">𝗥𝗲𝘀𝗲𝘁</button>
-		<button class=btn onMouseDown="clickSound.play()" onClick="useBrowser('http://tera.dvcoa.com.au:3000')">𝗟𝗲𝗮𝗱𝗲𝗿</button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="openTab(event,'manager')"><b>ModsManager</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="openTab(event,'custom')"><b>Command</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="LeaveParty()"><b>Exit Party</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="Reset()"><b>Reset</b></button>
+		<button class=btn onMouseDown="clickSound.play()" onClick="useBrowser('http://tera.dvcoa.com.au:3000')"><b>Leader</b></button>
 	</div>
 
 	<div id="custom" class="tabcontent"></div>
@@ -35,20 +35,20 @@
 	<div id="settings" class="tabcontent">
 		<table>
 			<tr>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="Notice()">𝙉𝙤𝙩𝙞𝙘𝙚</button></td><td><p id="Notice"></p></td>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="NoticeDamageAdd()">𝙉𝙤𝙩𝙞𝙘𝙚𝙑𝙖𝙡𝙪𝙚</button></td><td><p id="NoticeDamageAdd"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="Notice()"><i>Notice</i></button></td><td><p id="Notice"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="NoticeDamageAdd()"><i>NoticeValue</i></button></td><td><p id="NoticeDamageAdd"></p></td>
 			</tr>
 			<tr>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="BossOnly()">𝙊𝙣𝙡𝙞𝘽𝙊𝙎𝙎</button></td><td><p id="BossOnly"></p></td>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="HideNames()">𝙃𝙞𝙙𝙚𝙉𝙞𝙘𝙠</button></td><td><p id="HideNames"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="BossOnly()"><i>OnlyBoss</i></button></td><td><p id="BossOnly"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="HideNames()"><i>HideNick</i></button></td><td><p id="HideNames"></p></td>
 			</tr>
 			<tr>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="SkillLog()">𝙎𝙠𝙞𝙡𝙡𝙇𝙤𝙜</button></td><td><p id="SkillLog"></p></td>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="RankSystem()">𝙍𝙖𝙣𝙠𝙎𝙮𝙨𝙩𝙚𝙢</button></td><td><p id="RankSystem"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="SkillLog()"><i>SkillLog</i></button></td><td><p id="SkillLog"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="RankSystem()"><i>RankSystem</i></button></td><td><p id="RankSystem"></p></td>
 			</tr>
 			<tr>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="AllUsers()">𝘼𝙡𝙡𝙐𝙨𝙚𝙧𝙨</button></td><td><p id="AllUsers"></p></td>
-				<td><button class=btn onMouseDown="clickSound.play()" onClick="Debug()">𝘿𝙚𝙗𝙪𝙜</button></td><td><p id="Debug"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="AllUsers()"><i>AllUsers</i></button></td><td><p id="AllUsers"></p></td>
+				<td><button class=btn onMouseDown="clickSound.play()" onClick="Debug()"><i>Debug</i></button></td><td><p id="Debug"></p></td>
 			</tr>
 		</table>
 		<br>
