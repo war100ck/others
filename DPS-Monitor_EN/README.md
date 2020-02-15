@@ -5,12 +5,9 @@
 ------
 <p align="center"><img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/1.png" alt="Your image title" width="400"/>
 <img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/2.png" alt="Your image title" width="400"/>
-<img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/3.png" alt="Your image title" width="400"/></p>
-
-![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/2.png?raw=true")
-![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/3.png?raw=true")
-
-![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/4.png?raw=true")
-![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/5.png?raw=true")
+<img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/3.png" alt="Your image title" width="400"/>
+<img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/4.png" alt="Your image title" width="400"/>
+<img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/5.png" alt="Your image title" width="400"/></p>
+------
 
 
