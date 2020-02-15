@@ -4,4 +4,5 @@
 
 ------
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/1.png?raw=true)
+![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/2.png?raw=true)
 
