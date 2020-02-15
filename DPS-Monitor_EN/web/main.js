@@ -74,7 +74,7 @@ window.onload = function() {
 		//document.body.style.zoom="200%"
 		ResizeDiv()
 	} else {
-		_tera_client_proxy_.resize_to(300, 240)
+		_tera_client_proxy_.resize_to(320, 240)
 		_tera_client_proxy_.set_title('Tera(DPS) Damage statistics')
 	}
 	Settings()
@@ -269,7 +269,7 @@ function ExtUICB() {
 	var c = JSON.parse(this.responseText)
 	if (typeof _tera_client_proxy_ === 'undefined') {
 		// window.open(window.location.href, 'TDM', 'titlebar=no, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no')
-		window.open(window.location.href, 'TDM', 'height=300,width=240,top=0,left=0,directories=no,titlebar=nostatus=no,toolbar=no,menubar=no,navigationbar=no,location=no,resizable=no,scrollbars=no')
+		window.open(window.location.href, 'TDM', 'height=320,width=240,top=0,left=0,directories=no,titlebar=nostatus=no,toolbar=no,menubar=no,navigationbar=no,location=no,resizable=no,scrollbars=no')
 	} else {
 		// openWebsite('http://' + c.host + ':'+ c.port)
 		openWebsite(window.location.href)
