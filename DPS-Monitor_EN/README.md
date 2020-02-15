@@ -5,8 +5,6 @@
 ------
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/1.png?raw=true")
 
-![alt tag](<p align="center"><img src="https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/1.png"></p> "Описание будет тут")​
-
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/2.png?raw=true")
 ![DPS](https://github.com/war100ck/others/blob/master/DPS-Monitor_EN/screenshot/3.png?raw=true")
 
