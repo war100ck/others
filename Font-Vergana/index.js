@@ -1,3 +1,3 @@
-module.exports = function GageBar_TopScreen(m){
+module.exports = function fontrusvergana(m){
     m.installGPK("fonts_rus.gpk");
 }
