@@ -7,8 +7,7 @@
     },
     "author": "Seren / Witch ,Translation RU: war100ck",
     "description": "Выделяет монстров указанных пользователем , мировых боссов и монстров специальных событий. Version: Patch 90.2",
-    "servers": ["https://raw.githubusercontent.com/Witch-hue/Monster-Marker/master/"],
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Monster-Marker-RU/"],
     "supportUrl": "https://github.com/Witch-hue/Monster-Marker/issues",
-	"supportUrl": "https://github.com/Witch-hue/Monster-Marker",
     "version": "90.2"
 }
