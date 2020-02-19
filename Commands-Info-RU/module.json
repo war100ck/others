@@ -5,8 +5,8 @@
     "author": "war100ck",
     "description": "Выводит в графическом интерфейсе список модулей и команд к ним (com ui)",
     "version": "0.01",
-    "supportUrl": "https://github.com/war100ck/others/tree/master/auto-fishing-RU",
-    "servers": ["https://raw.githubusercontent.com/PatrickSantoZZ/infinity-journal/master/"],
+    "supportUrl": "https://github.com/war100ck/others/tree/master/Commands-Info-RU",
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/tree/master/Commands-Info-RU/master/"],
     "options": {
         "niceName": "Commands-Info-RU",
         "guiName": "Commands-Info-RU",
