@@ -6,7 +6,7 @@
     "description": "Выводит в графическом интерфейсе список модулей и команд к ним (com ui)",
     "version": "0.01",
     "supportUrl": "https://github.com/war100ck/others/tree/master/Commands-Info-RU",
-    "servers": ["https://raw.githubusercontent.com/war100ck/others/tree/master/Commands-Info-RU/master/"],
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/tree/master/Commands-Info-RU/"],
     "options": {
         "niceName": "Commands-Info-RU",
         "guiName": "Commands-Info-RU",
