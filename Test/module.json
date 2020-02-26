@@ -1,0 +1,19 @@
+{
+    "name": "Merchant-Helper",
+    "options": {
+        "niceName": "Merchant Helper",
+        "guiName": "Merchant Helper",
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "settingsVersion": 10
+    },
+    "author": "ZC / Neko / Owyn/ Lambda11/ PsykoDev",
+    "description": "Helps you to find deliver Goblin/Wandering Goblin / Mystery Merchant",
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/"],
+    "dependencies": {
+        "notifier": "https://raw.githubusercontent.com/PatrickSantoZZ/tera-notifier/master/module.json",
+        "tera-message": "https://raw.githubusercontent.com/PatrickSantoZZ/tera-message/master/module.json"
+    },
+    "version": "90.02",
+    "disableAutoUpdate": false
+}

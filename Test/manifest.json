@@ -1,0 +1,21 @@
+{
+    "files": {
+        "index.js": "13cb156e6045c451537b7d8b3de333d840b9f7eeeded32dad65e93d7e25077ef",
+        "module.json": "98067f0533ddcc0297692cc9edcd6474a5f5397cbb2e4004db09d8923f6e2f34",
+        "settings_migrator_DE.js": "658ce380880509ecefd30c371552edb13bb899154e1051aa046651600363b501",
+        "settings_migrator_EN.js": "8731db640df648498c5e926878c824994c0160dd32d70964a445def081411cce",
+        "settings_migrator_RU.js": "13b8240f7700209986b7bbafbf4238de6b868d5ae420b773581f961aaa5249fb"
+    },
+    "defs": {
+        "C_CHAT": 1,
+        "S_BOSS_GAGE_INFO": 3,
+        "S_CURRENT_CHANNEL": 2,
+        "S_DESPAWN_DROPITEM": 4,
+        "S_DESPAWN_NPC": 3,
+        "S_EACH_SKILL_RESULT": 14,
+        "S_NPC_STATUS": 2,
+        "S_SPAWN_DROPITEM": 8,
+        "S_SPAWN_NPC": 11,
+        "S_SYSTEM_MESSAGE": 1
+    }
+}
