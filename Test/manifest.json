@@ -1,7 +1,14 @@
 {
     "files": {
+        "README.md": "265904859e5f0a984ea141a6274a4c8c4d36fa6f9fffae3c4f53c9ce9a72ea4f",
         "index.js": "13cb156e6045c451537b7d8b3de333d840b9f7eeeded32dad65e93d7e25077ef",
         "module.json": "da06e9d1d136623f56a9d534d5bcc053e7d5bd45cdab2dd8ee15987c91aebdc2",
+        "screenshot/01.PNG": "0f48258efb9baa9090e949b76a4871119d3752f9085ac7f3cd119986bca023f8",
+        "screenshot/02.PNG": "f50c40a480c245e3b9bb8191f3a78eaa14824f93a54e84cfc2f0bc61e5da3e63",
+        "screenshot/03.PNG": "63557a6a562f28da262cf68a80223e6c89525bfaaec337068386c7070aadf273",
+        "screenshot/04.PNG": "76aa7ddf2616f7d64140a63560c30bb8c284540e027241a7183c9ea8e98f581a",
+        "screenshot/05.png": "1c978390ccaea1fb67276f98073a9afe5f86cdb4fb4d3fcff1517183d0f33ee8",
+        "screenshot/06.PNG": "68c82ef29b78819d63022cca19980e9715edac953d9d849bcf3072d92e2a4234",
         "settings_migrator_DE.js": "658ce380880509ecefd30c371552edb13bb899154e1051aa046651600363b501",
         "settings_migrator_EN.js": "8731db640df648498c5e926878c824994c0160dd32d70964a445def081411cce",
         "settings_migrator_RU.js": "13b8240f7700209986b7bbafbf4238de6b868d5ae420b773581f961aaa5249fb"
