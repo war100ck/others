@@ -1,12 +1,12 @@
 {
     "disableAutoUpdate": false,
-    "name": "Fonts-Vergana",
+    "name": "Сustom-Font",
     "category": "client",
     "description": "Читабельный шрифт",
     "author": "",
     "options": {
-        "niceName": "Fonts-Vergana",
-        "guiName": "Fonts-Vergana"
+        "niceName": "Calypso-Font",
+        "guiName": "Calypso-Font"
     },
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Сustom-Font/"]
 }
