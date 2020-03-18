@@ -9,8 +9,8 @@
 ---
 
 ## Установка:
-Скопируйте файлы из папки папки defs в папку-Proxy/node_modules/tera-data/protocol.
-Скопируйте или обьедените с файлом протоколола (protocol.ХХХХХХ.map) в папку-Proxy/node_modules/tera-data/map.
+Скопируйте файлы из папки папки defs в папку-Proxy/data/definitions/.
+Скопируйте или обьедените с файлом протоколола (protocol.ХХХХХХ.map) в папку-Proxy/data/opcodes/.
 
 ---
 
