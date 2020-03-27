@@ -7,6 +7,6 @@
         "niceName": "DG-Teleport-RU",
         "guiName": "DG-Teleport-RU"
     },
-    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/DG-Teleport-RU/"],
+    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/DG-teleport-RU/"],
     "disableAutoUpdate": false
 }
