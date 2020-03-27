@@ -4,7 +4,7 @@
         "README.MD": "c2ec8aaea1f3f84d44906923c316d41846c1992f5323e3f8c1a642f933dcc6de",
         "dungeon-list.json": "6cdcaf01e9ae31f58945db6710374ed367c1274c14a16fa761f69e18a5884309",
         "index.js": "b296e5be146e6f8ef62a9947cdc467996e9dbf453f6cc72ea0c2501978b9fbe2",
-        "module.json": "f34c45f1cad087382310be796446486e785ec37f5632da09eef975d55506134b"
+        "module.json": "219a1e775af28b238ba7326bac2e8c3206e3e19fcc1b9e16e8e241e1d171b014"
     },
     "defs": {
         "S_ANNOUNCE_UPDATE_NOTIFICATION": 1,
