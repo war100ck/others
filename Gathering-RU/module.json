@@ -11,5 +11,6 @@
     "description": "Помощь по сбору рессурсов",
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Gathering-RU/"],
     "supportUrl": "https://github.com/tera-mod/Gathering/issues",
-    "version": "92.4"
+    "version": "92.4",
+    "disableAutoUpdate": false
 }
