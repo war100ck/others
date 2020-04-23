@@ -9,5 +9,5 @@
     "description": "Выделяет монстров указанных пользователем , мировых боссов и монстров специальных событий. Version: Patch 90.2",
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Monster-Marker-RU/"],
     "supportUrl": "https://github.com/Witch-hue/Monster-Marker/issues",
-    "version": "90.2"
+    "version": "92.4"
 }
