@@ -2,7 +2,7 @@ const DefaultSettings = {
     "enabled": false,
     "sendToAlert":  true, // Предупреждение на экране
     "sendToNotice": true, // Главное уведомление
-    "markerId":    98260, // 光柱提示物 98260 ---古龍貝勒古斯的頭
+    "markerId":    88704, // 光柱提示物 88704 ---古龍貝勒古斯的頭
     "plants": [
         {id: 1, name: 'Редкий', msg: 'Густой кустарник'},
         {id: 2, name: 'Растения', msg: 'Дикая кукуруза'},
