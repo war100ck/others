@@ -52,7 +52,7 @@ module.exports = function Gathering(mod) {
 					gatheringStatus()
 					break
 				
-				case "растение":
+				case "растения":
 					plantsMarkers = !plantsMarkers
 					sendMessage("Подсказки по растениям -  " + (plantsMarkers ? "Показаны" : "Скрыты"))
 					break
