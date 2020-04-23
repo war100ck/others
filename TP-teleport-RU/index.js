@@ -8,7 +8,7 @@ module.exports = function TPTeleport(mod) {
     const dungeons = jsonRequire('./teleport-list.json');
     mod.dispatch.addDefinition('C_REQUEST_EVENT_MATCHING_TELEPORT', 0, path.join(__dirname, 'C_REQUEST_EVENT_MATCHING_TELEPORT.0.def'));
 
-    cmd.add('t', (value) => {
+    cmd.add('tpl', (value) => {
         if (value && value.length > 0) value = value.toLowerCase();
         if (value) {
             const loc = search(value);
