@@ -1,16 +1,5 @@
 {
     "disableAutoUpdate": false,
-    "name": "Помощь по сбору",
-    "options": {
-        "niceName": "Gathering-RU",
-        "guiName": "Gathering-RU",
-        "settingsFile": "config.json",
-        "settingsMigrator": "settings_migrator.js",
-        "settingsVersion": 3
-    },
-    "author": "ZC, translanion RU: WAR100CK",
-    "description": "Помощь по сбору рессурсов",
-    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Gathering-RU/"],
-    "supportUrl": "https://github.com/tera-mod/Gathering/issues",
-    "version": "v92.4"
+    "name": "Gathering-RU",
+    "description": "Description goes here."
 }
