@@ -2,7 +2,7 @@
     "name": "Помощь по сбору",
     "options": {
         "niceName": "Gathering-RU",
-        "guiName": "Gathering-RU(Помощь по сбору)",
+        "guiName": "Gathering-RU(Gathering)",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
         "settingsVersion": 3
