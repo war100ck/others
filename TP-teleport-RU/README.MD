@@ -22,5 +22,5 @@ You need to have proper ilvl to teleport to each dungeon.
 Mod uses the original 'Go to Dungeon Entrance' button to teleport you, so don't be afraid.
 
 ### Screen
-![screenshot](https://photos.app.goo.gl/YsGQB9CcLZBhzDck7)
+![screenshot](https://i.imgur.com/HIv4JwA.png)
 ---
