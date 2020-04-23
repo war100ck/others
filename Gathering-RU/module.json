@@ -6,14 +6,11 @@
         "guiName": "Gathering-RU",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
-        "settingsVersion": 1
+        "settingsVersion": 3
     },
     "author": "ZC, translanion RU: WAR100CK",
     "description": "Помощь по сбору рессурсов",
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/Gathering-RU/"],
     "supportUrl": "https://github.com/tera-mod/Gathering/issues",
-    "dependencies": {
-        "tera-message": "https://raw.githubusercontent.com/tera-mod/tera-message/master/module.json"
-    },
     "version": "v92.4"
 }
