@@ -1,7 +1,6 @@
 {
-  "files": {
-    "index.js": "00caa87ae399be7ea6a8d9aaf7f7f471dcc1694c3973dcaffe0711769835a37d",
-    "manifest.json": "366dfb9c93263f967d71a04b8af25a131627c80e0fd2b3f9492e5d547866d589",
-    "module.json": "3786eb9d5487df3a6e6b668761f745ee4794aa9e4e724653979e5104f6a9f8db",
-  }
+    "files": {
+        "index.js": "00caa87ae399be7ea6a8d9aaf7f7f471dcc1694c3973dcaffe0711769835a37d",
+        "module.json": "aa0bb51ca652bf9aa06da307f1d383c176ee62c32e87117b857ff90a661c74ac"
+    }
 }
