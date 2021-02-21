@@ -1,9 +1,5 @@
 {
+    "disableAutoUpdate": false,
     "name": "tera-game-state-helper",
-    "category": "client",
-    "author": "Caali",
-    "description": "Helper module for tera-game-state.",
-    "version": "v 92.04",
-    "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tera-game-state-helper/"],
-    "disableAutoUpdate": false
+    "description": "Description goes here."
 }
