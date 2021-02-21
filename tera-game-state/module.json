@@ -5,7 +5,7 @@
     "version": "v 92.04",
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tera-game-state/"],
     "dependencies": {
-        "tera-game-state-helper": "https://raw.githubusercontent.com/war100ck/others/master/tera-game-state-helper/module.json"
+        "tera-game-state-helper": "https://raw.githubusercontent.com/war100ck/Only-for-90_04/master/tera-game-state-helper/module.json"
     },
     "disableAutoUpdate": false
 }
