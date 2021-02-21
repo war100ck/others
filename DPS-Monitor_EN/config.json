@@ -6,10 +6,10 @@
         "leaving_msg": "",
         "notice": true,
         "notice_damage": 7000000,
-        "bossOnly": true,
+        "bossOnly": false,
         "hideNames": false,
         "skillLog": true,
-        "rankSystem": true,
+        "rankSystem": false,
         "allUsers": false,
         "debug": false
     }

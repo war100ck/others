@@ -378,8 +378,8 @@ module.exports = function TDM(mod) {
 			
 			dpsmsg += className(data[i].class)                               // 职业
 			
-			dpsmsg += "| Total DMG " + data[i].percentage  + MSG.BLU(" % ")           // 比例
-			dpsmsg += "| Crit " + crit                                          // 暴率(治疗)
+			dpsmsg += "| Total DMG" + data[i].percentage  + MSG.BLU("% ")           // 比例
+			dpsmsg += "| Crit" + crit                                          // 暴率(治疗)
 			dpsmsg += "|"    + data[i].dps.nFormatter(3) + "/s"              // DPS
 			dpsmsg += "|"    + data[i].totalDamage.nFormatter(3)             // 合计
 			dpsmsg += "|"    + name                                          // 昵称

@@ -1,7 +1,7 @@
 const DefaultSettings = {
     "enabled": true,
-    "popup":             true, // 显示窗口
-    "leaving_msg":       "3Q", // 退队留言
+    "popup":             true, // Display window
+    "leaving_msg":       "3Q", // Оставить сообщение
     "notice":            true, // 设置 技能伤害大小 提示
     "notice_damage":  5000000, // 触发大小
     "bossOnly":          true, // DPS仅记录输出BOSS

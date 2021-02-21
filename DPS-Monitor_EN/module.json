@@ -2,8 +2,8 @@
     "disableAutoUpdate": false,
     "name": "DPS-Monitor",
     "options": {
-        "niceName": "Tera DPS Monitor",
-        "guiName": "Tera DPS Monitor",
+        "niceName": "Tera DPS Monitor (Подсчет статистики боя)",
+        "guiName": "Tera DPS Monitor (Подсчет статистики боя)",
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js",
         "settingsVersion": 1
@@ -13,7 +13,7 @@
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/DPS-Monitor_EN/"],
     "supportUrl": "https://github.com/tera-mod/DPS-Monitor/issues",
     "dependencies": {
-        "tera-message": "https://raw.githubusercontent.com/tera-mod/tera-message/master/module.json"
+        "tera-message": "https://raw.githubusercontent.com/war100ck/others/master/command/module.json"
     },
-    "version": "85.07"
+    "version": "EN v92.04"
 }
