@@ -13,7 +13,7 @@
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/DPS-Monitor_EN/"],
     "supportUrl": "https://github.com/tera-mod/DPS-Monitor/issues",
     "dependencies": {
-        "tera-message": "https://raw.githubusercontent.com/war100ck/others/master/command/module.json"
+        "tera-message": "https://raw.githubusercontent.com/war100ck/others/master/tera-message/module.json"
     },
     "version": "EN v92.04"
 }
