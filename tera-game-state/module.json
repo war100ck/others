@@ -6,5 +6,6 @@
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tera-game-state/"],
     "dependencies": {
         "tera-game-state-helper": "https://raw.githubusercontent.com/war100ck/others/master/tera-game-state-helper/module.json"
-    }
+    },
+    "disableAutoUpdate": false
 }
