@@ -1,15 +1,10 @@
 {
-    "name": "Tera-Game-State",
-    "options": {
-        "niceName": "Tera-Game-State",
-        "guiName": "Tera-Game-State"
-    },
+    "name": "tera-game-state",
     "author": "Caali",
-    "description": "Отслеживает текущее состояние игры и предоставляет разработчикам высокоуровневый API для создания своих модов.",
+    "description": "Tracks the game's current state and provides a high-level API for developers to base their mods on.",
+    "version": "1.0",
     "servers": ["https://raw.githubusercontent.com/war100ck/others/master/tera-game-state/"],
     "dependencies": {
-        "tera-game-state-helper": "https://raw.githubusercontent.com/war100ck/Only-for-90_04/master/tera-game-state-helper/module.json"
-    },
-    "version": "92.04",
-    "disableAutoUpdate": false
+        "tera-game-state-helper": "https://raw.githubusercontent.com/tera-toolbox/tera-game-state-helper/master/module.json"
+    }
 }
