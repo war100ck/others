@@ -4,7 +4,7 @@
         "lib/contract.js": "297bbff8c8887754f6e50a4fdffb2c1444aa9a7d8f5ef02941d43ad374117b58",
         "lib/inventory.js": "2a6929ce733e687957a2166de9ac51e48c13528372c4ad9660d0c71af47e5ca7",
         "lib/me.js": "818c175fc89a54c844d04a3d532b557a67e7e280c03076efebdb2a7bb8eb5f5d",
-        "module.json": "83535d7800a9a0620ab869e948b30d3651bd875f5d24dbc91d02ce47d924aef9"
+        "module.json": "54351932349cd987f91e3bc692b36ddcc0091adef7eb8c573948bf23fc67f3ac"
     },
     "defs": {
         "C_LOGIN_ARBITER": 2,
