@@ -1,26 +1,26 @@
 class TeraMessage {
 	constructor(mod) {
 		this.clr = function(text, hexColor) {
-			return '<font color="#'+ hexColor +'">' + text + '</font>' // Любой цвет
+			return '<font color="#'+ hexColor +'">' + text + '</font>' // 自定义
 		}
 		
 		this.RED = function(text) {
-			return '<font color="#FF0000">' + text + '</font>' // Красный
+			return '<font color="#FF0000">' + text + '</font>' // 红
 		}
 		this.BLU = function(text) {
-			return '<font color="#56B4E9">' + text + '</font>' // Синий
+			return '<font color="#56B4E9">' + text + '</font>' // 蓝
 		}
 		this.YEL = function(text) {
-			return '<font color="#E69F00">' + text + '</font>' // Желтый
+			return '<font color="#E69F00">' + text + '</font>' // 黄
 		}
 		this.TIP = function(text) {
-			return '<font color="#00FFFF">' + text + '</font>' // Красный
+			return '<font color="#00FFFF">' + text + '</font>' // 青
 		}
 		this.GRY = function(text) {
-			return '<font color="#A0A0A0">' + text + '</font>' // Зеленый
+			return '<font color="#A0A0A0">' + text + '</font>' // 灰
 		}
 		this.PIK = function(text) {
-			return '<font color="#FF00DC">' + text + '</font>' // Розовый
+			return '<font color="#FF00DC">' + text + '</font>' // 粉
 		}
 		
 		this.chat = function(msg) {
@@ -30,6 +30,18 @@ class TeraMessage {
 			mod.send('S_CHAT', 3 , {
 				channel: 21,
 				name: 'TIP',
+				message: msg,
+			})
+		}
+		this.guild = function(msg) {
+			mod.send('C_CHAT', 1 , {
+				channel: 2,
+				message: msg,
+			})
+		}
+		this.global = function(msg) {
+			mod.send('C_CHAT', 1 , {
+				channel: 27,
 				message: msg,
 			})
 		}
