@@ -1,2 +1,0 @@
-bool useResetItem # always false on modern clients since glyph reset is free
-array<uint32> glyphs

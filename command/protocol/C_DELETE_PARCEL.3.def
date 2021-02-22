@@ -1,3 +1,0 @@
-uint32 contract
-bool outbox
-array<uint32> messages

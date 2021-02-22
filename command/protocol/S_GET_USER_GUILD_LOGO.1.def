@@ -1,3 +1,0 @@
-int32  playerId
-int32  guildId
-bytes  logo

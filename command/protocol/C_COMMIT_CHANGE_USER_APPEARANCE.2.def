@@ -1,7 +1,0 @@
-int32     playerId
-int32     race
-int32     gender
-customize appearance
-int32     unk # 100
-bytes     details
-bytes     shape
