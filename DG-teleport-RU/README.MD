@@ -2,7 +2,7 @@
 Fast teleport to every important dungeon with GUI or not
 
 ## Author of the original mod [PsykoDev / dg-teleport](https://github.com/PsykoDev/dg-teleport)
-### This is only a translation of the original version.
+> This is only a translation of the original version.
 
 ## Usage
 ### `dg`
